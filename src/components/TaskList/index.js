@@ -56,7 +56,7 @@ const TaskList = props =>{
         window.location.reload()
       }
         else{
-        const todoApiUrl = `https://backendtodoblog2-3.onrender.com/status/${todoData.id}`
+        const todoApiUrl = `https://backendtodoblog2-4.onrender.com/status/${todoData.id}`
         const jwtToken = Cookies.get('jwt_token')
         const config = {
         headers : {Authorization: `Bearer ${jwtToken}` }

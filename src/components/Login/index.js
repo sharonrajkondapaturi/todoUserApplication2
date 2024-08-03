@@ -16,7 +16,7 @@ const Login = ()=>{
     //if the data is successfully fetched the user will be routed todos page
     const onSuccess = jwtToken =>{
         Cookies.set('jwt_token',jwtToken,{expires:30})
-        navigate('/todos')
+        navigate('/')
     }
 
     //check's the user credentials

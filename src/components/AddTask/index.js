@@ -35,9 +35,8 @@ class AddTask extends Component{
         const config = {
             headers : {Authorization: `Bearer ${jwtToken}` }
         }
-        const response = await axios.post(todoApiUrl,todoData,config)
-        console.log(response)
-        window.history.pushState({}, undefined, "/todos");
+        await axios.post(todoApiUrl,todoData,config)
+        window.history.pushState({}, undefined, "/");
         window.location.reload()
     }
     render(){

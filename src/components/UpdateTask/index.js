@@ -30,7 +30,7 @@ const UpdateTask = ()=>{
             headers : {Authorization: `Bearer ${jwtToken}` }
         }
         await axios.put(`https://backendtodoblog2-4.onrender.com/todos/${id}`,todoData,config)
-        navigate('/todos')
+        navigate('/')
 
     }
     

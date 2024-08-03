@@ -24,7 +24,7 @@ const TaskInput = () =>{
     const [priority,setPriority] = useState('')
     const [todo,setTodo] = useState('')
     const [todoList,setTodoList] = useState([])
-    const navigate = useNavigate('/')
+    const navigate = useNavigate()
     
     //fetching the data
     const onRender = async(priority,todo)=>{

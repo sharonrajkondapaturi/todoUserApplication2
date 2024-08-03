@@ -6,7 +6,7 @@ const NoPageFound = ()=>{
     const navigate = useNavigate()
 
     const onButton = ()=>{
-        navigate('/todos')
+        navigate('/')
     }
     return(
         <NoContainer>

@@ -20,7 +20,7 @@ const App = ()=>(
     <Route element={<ProtectedRoute/>}>
     <Route path="/register" element={<Register/>}/>
     <Route path="/login" element={<Login/>}/>
-    <Route path="/todos" element={<TaskInput/>}/>
+    <Route path="/" element={<TaskInput/>}/>
     <Route path="/addtodos" element={<AddTask/>}/>
     <Route path="/updatetodos" element={<UpdateTask/>}/>
     </Route>
