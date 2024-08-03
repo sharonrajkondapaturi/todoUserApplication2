@@ -111,8 +111,7 @@ const TaskInput = () =>{
     //user will be logout
     const onLoginButton = ()=>{
         Cookies.remove('jwt_token')
-        window.history.pushState({}, undefined, "/login");
-        window.location.reload()
+        navigate('/login')
     }
     
     //each priority for their own colors
