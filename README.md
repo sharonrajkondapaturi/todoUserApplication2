@@ -1,5 +1,6 @@
-# Getting Started with Create React App
+### Getting Started with Create React App
 
+### DeployedApp (Frontentend)
 In this project we are going to see the deployed app of TodoApplication 
 
 ### https://main--nucleartodo.netlify.app
