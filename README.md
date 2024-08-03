@@ -54,11 +54,11 @@ In this project we are going to see the deployed app of TodoApplication
 
 -----> the main primary file is App.js which contains the following components of the location
 
-### Register Component ### (https://main--nucleartodo.netlify.app/register)
+### Register Component (https://main--nucleartodo.netlify.app/register)
 
 -----> the new user will register the date with the help of the Registercomponent and then it will route back to LoginPage (https://main--nucleartodo.netlify.app/login)
 
-### Login Component ### (https://main--nucleartodo.netlify.app/login)
+### Login Component (https://main--nucleartodo.netlify.app/login)
 
 -----> the user is used for logging in with the correct credentials in oerder to route to home Page
 
@@ -66,7 +66,7 @@ In this project we are going to see the deployed app of TodoApplication
 
 ------> it is used to access wheter the user is loged it will be accessing the todo page if not it will redirect to login this can be done using Cookies
 
-### TaskInput Component ### (https://main--nucleartodo.netlify.app/)
+### TaskInput Component (https://main--nucleartodo.netlify.app/)
 
 -----> it contains todoList of the user's
 -----> it contains AddTodo,EditTodo,DeleteTodo and also we can change the status of the todoData
