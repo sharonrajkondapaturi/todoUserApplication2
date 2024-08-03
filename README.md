@@ -1,70 +1,100 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In this project we are going to see the deployed app of TodoApplication 
 
-## Available Scripts
+### https://main--nucleartodo.netlify.app
 
-In the project directory, you can run:
+----> the following components which are used
 
-### `npm start`
+---> check out the backend in order to understand the backendDevelopment
+### https://github.com/sharonrajkondapaturi/BackendTodoBlog2 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+--->BackendApi
+### https://backendtodoblog2-4.onrender.com/todos (GET,POST)
+### https://backendtodoblog2-4.onrender.com/todos/:id (PUT,DELETE)
+### https://backendtodoblog2-4.onrender.com/login (POST)
+### https://backendtodoblog2-4.onrender.com/register (POST)
+### https://backendtodoblog2-4.onrender.com/status/:id (PUT)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### AddTask
+### UpdateTask
+### TaskInput
+### TaskList
+### Login
+### Register
+### NoPageFound
+### ProtectedRoute
 
-### `npm test`
+### hooks state used
+--> useState
+--> useEffect
+--> useNavigate
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### libraries used
+---> react-icons
+---> react-loader-spinner (FidgetSpinner)
+---> react (useState,useEffect)
+---> react-router-dom (useNavigate,Link,Routes,Route,BrowserSwitch)
+---> axios
+---> js-cookie
+---> React (Component)
+---> styled-componets
 
-### `npm run build`
+### media queries used
+---> extra small devices
+---> small devices
+---> medium devices
+---> large devices
+---> extra large devices
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-----> class component is used in AddTask components only
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-----> styled-components are used 
 
-### `npm run eject`
+-----> the main primary file is App.js which contains the following components of the location
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Register Component ### (https://main--nucleartodo.netlify.app/register)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+-----> the new user will register the date with the help of the Registercomponent and then it will route back to LoginPage (https://main--nucleartodo.netlify.app/login)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Login Component ### (https://main--nucleartodo.netlify.app/login)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+-----> the user is used for logging in with the correct credentials in oerder to route to home Page
 
-## Learn More
+### ProtectedRoute Component 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+------> it is used to access wheter the user is loged it will be accessing the todo page if not it will redirect to login this can be done using Cookies
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### TaskInput Component ### (https://main--nucleartodo.netlify.app/)
 
-### Code Splitting
+-----> it contains todoList of the user's
+-----> it contains AddTodo,EditTodo,DeleteTodo and also we can change the status of the todoData
+-----> priority Tabs and search Bar is contain in order to query the user todo and would be flexible
+-----> if we click AddTodo the user can create new todo 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### TaskList Component 
 
-### Analyzing the Bundle Size
+-----> tasklist component is used to render the todoList 
+-----> which contains Edit,Delete,status of todo
+-----> if we click Edit Button the user can update the current todo
+-----> if we click Delete Button the user can delete the current todo
+-----> if we click Accomplished the todo text of the todoList will be striken and display as Unaccomplished 
+-----> if we click Unaccomplished the todo text of the todoList will be un-striken and display as Accomplished 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### AddTask Component (https://main--nucleartodo.netlify.app/addTodo)
 
-### Making a Progressive Web App
+----> AddTask component is used for adding new Todo of the corresponding User
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### UpdateTask Component (https://main--nucleartodo.netlify.app/updateTodo)
 
-### Advanced Configuration
+----> UpdateTask component is used for updating Todo of the corresponding User
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### NoPageFound Component (optionalComponent)
 
-### Deployment
+----> it is a optional Component as Netlify will find and give 404 message
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+                ******in order to understand more and clear, check out the following components which is been commented every step****
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+                                 
