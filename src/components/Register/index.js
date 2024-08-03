@@ -87,7 +87,7 @@ return(
             null
             }
             <LoginButton type="submit">
-                Login
+                Register
             </LoginButton>
             <Link to="/login" color="#ffffff">
             <Linkto>already a user?</Linkto>
