@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import ProtectedRoute from './components/ProtectedRoute'
+import Register from './components/Register'
+import Login from './components/Login'
+import TaskInput from './components/TaskInput'
+import AddTask from './components/AddTask'
+import UpdateTask from './components/UpdateTask'
+import NoPageFound from './components/NoPageFound'
+import './App.css'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+//This is the Primary components where it routes the page Register and Login component are open components 
+//where as the remaining are not it should be logged and then it will be redirected to homepage,editpage and addpage
+//if the page is not found it will route to No Page Found
+
+const App = ()=>(
+  <BrowserRouter>
+  <Routes>
+    <Route path="/register" element={<Register/>}/>
+    <Route path="/login" element={<Login/>}/>
+    <Route element={<ProtectedRoute/>}>
+    <Route path="/register" element={<Register/>}/>
+    <Route path="/login" element={<Login/>}/>
+    <Route path="/todos" element={<TaskInput/>}/>
+    <Route path="/addtodos" element={<AddTask/>}/>
+    <Route path="/updatetodos" element={<UpdateTask/>}/>
+    </Route>
+    <Route path="*" element={<NoPageFound/>}/>
+  </Routes>
+  </BrowserRouter>
+  
+)
 
 export default App;
