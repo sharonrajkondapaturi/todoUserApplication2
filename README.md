@@ -17,6 +17,16 @@ In this project we are going to see the deployed app of TodoApplication
 ### https://backendtodoblog2-4.onrender.com/register (POST)
 ### https://backendtodoblog2-4.onrender.com/status/:id (PUT)
 
+---> user credentials
+  user:SharonRaj
+  password:84249418
+
+  user:Hannah
+  password:19942004
+
+  user:SureshBabu
+  password:8791008
+
 ### AddTask
 ### UpdateTask
 ### TaskInput
