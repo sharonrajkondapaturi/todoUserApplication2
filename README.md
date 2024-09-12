@@ -3,7 +3,7 @@
 ### DeployedApp (Frontentend)
 In this project we are going to see the deployed app of TodoApplication 
 
-### https://main--nucleartodo.netlify.app
+[### https://main--nucleartodo.netlify.app](https://main--personstodo.netlify.app/)
 
 ----> the following components which are used
 
@@ -37,7 +37,7 @@ In this project we are going to see the deployed app of TodoApplication
 ### Register
 ### NoPageFound
 ### ProtectedRoute
-### userDetails
+### UserDetails
 
 ### hooks state used
 --> useState
@@ -103,7 +103,7 @@ In this project we are going to see the deployed app of TodoApplication
 
 ----> UpdateTask component is used for updating Todo of the corresponding User
 
-### UserDetail Component
+### UserDetails Component
 
 ----> UserDetails component is used to display the user todo count ,accomplished and unaccomplished count also contains home,add todo and logout buttons
 
