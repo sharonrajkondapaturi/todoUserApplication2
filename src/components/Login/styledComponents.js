@@ -15,6 +15,11 @@ export const MiniContainer = style.div`
     display:flex;
     flex-direction:column;
 `
+
+export const Star = style.span`
+color:red;
+`
+
 export const Heading = style.h1`
 @media screen and (min-width:768px){
     font-family:cursive;

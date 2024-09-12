@@ -2,10 +2,9 @@ import {Link} from 'react-router-dom';
 import axios from 'axios';
 import Cookies from 'js-cookie'
 import { CiEdit } from "react-icons/ci";
-import { GrCompliance } from "react-icons/gr";
-import { MdIncompleteCircle } from "react-icons/md";
+import { BiTask,BiTaskX } from "react-icons/bi";
 import { RiDeleteBin5Line } from "react-icons/ri";
-import { Todo,TodoList,HeadContainer,Button,ButtonRows,Priority,Description,DescriptionSpan} from "./styledComponents";
+import { Todo,TodoList,HeadContainer,Button,ButtonRows,Priority,PrioritySpan,Description,DescriptionSpan} from "./styledComponents";
 
 //Tasklist is been display displayed 
 const TaskList = props =>{
@@ -67,14 +66,14 @@ const TaskList = props =>{
     }
 
     return(
-        <TodoList text={status}>
-        <Todo>{todo}</Todo>
-        <Description>Description: <DescriptionSpan>
+        <TodoList>
+        <Todo text={status}>{todo}</Todo>
+        <Description>Description: <DescriptionSpan text={status}>
         {description}    
         </DescriptionSpan></Description>
         <HeadContainer>
         <Priority color="#000000">Priority: </Priority>
-        <Priority color={onColor(priority)}>{priority}</Priority>
+        <PrioritySpan color={onColor(priority)} text={status}>{priority}</PrioritySpan>
         </HeadContainer>
         <ButtonRows>
         <Link to="/updatetodos" state={todoData} style={{textDecoration:"none"}}>
@@ -89,11 +88,11 @@ const TaskList = props =>{
         </Button>
         {status === "Unaccomplished"?(
             <Button type="button" color="#4287f5" onClick={onAccomplish}>
-            <GrCompliance fill="#ffffff" style={{marginRight:10,paddingRight:10,borderRight:"1px solid #ffffff"}}/>
+            <BiTask size={20} fill="#ffffff" style={{marginRight:10,paddingRight:10,borderRight:"1px solid #ffffff"}}/>
             Accomplished
         </Button>
         ):(<Button type="button" color="#de632a" onClick={onAccomplish}>
-        <MdIncompleteCircle fill="#ffffff" style={{marginRight:10,paddingRight:10,borderRight:"1px solid #ffffff"}}/>
+        <BiTaskX size={20} fill="#ffffff" style={{marginRight:10,paddingRight:10,borderRight:"1px solid #ffffff"}}/>
         Unaccomplished
         </Button>)}
         </ButtonRows>

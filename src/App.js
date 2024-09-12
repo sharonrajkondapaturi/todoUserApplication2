@@ -5,6 +5,7 @@ import Login from './components/Login'
 import TaskInput from './components/TaskInput'
 import AddTask from './components/AddTask'
 import UpdateTask from './components/UpdateTask'
+import UserDetails from './components/UserDetails'
 import NoPageFound from './components/NoPageFound'
 import './App.css'
 
@@ -18,11 +19,12 @@ const App = ()=>(
     <Route path="/register" element={<Register/>}/>
     <Route path="/login" element={<Login/>}/>
     <Route element={<ProtectedRoute/>}>
-    <Route path="/register" element={<Register/>}/>
-    <Route path="/login" element={<Login/>}/>
-    <Route path="/" element={<TaskInput/>}/>
-    <Route path="/addtodos" element={<AddTask/>}/>
-    <Route path="/updatetodos" element={<UpdateTask/>}/>
+         <Route path="/register" element={<Register/>}/>
+         <Route path="/login" element={<Login/>}/>
+         <Route path="/" element={<TaskInput/>}/>
+         <Route path="/addtodos" element={<AddTask/>}/>
+         <Route path="/updatetodos" element={<UpdateTask/>}/>
+         <Route path="/userTodo" element={<UserDetails/>}/>
     </Route>
     <Route path="*" element={<NoPageFound/>}/>
   </Routes>

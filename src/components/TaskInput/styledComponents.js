@@ -43,10 +43,32 @@ export const BackgroundContainer = style.div`
     overflow-y:scroll;
 }
 `
+export const TopRow = style.div`
+display:flex;
+flex-direction:row;
+align-items:center;
+`
 export const Heading = style.h1`
 font-size:38px;
 font-family:cursive;
 font-weight:bold;
+`
+export const UserProfile = style.div`
+border-radius:100%;
+width:50px;
+height:50px;
+background-color:#e314c7;
+font-weight:bold;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+font-size:18px;
+margin-left:20px;
+cursor:pointer;
+&:hover{
+    background-color:#f29007;
+}
 `
 export const TopContainer = style.div`
 display:flex;
@@ -137,6 +159,11 @@ export const AddButton = style.button`
     width:140px;
     cursor:pointer;
     height:40px;
+    transition:1s;
+    &:hover{
+        background-color:#9b3de3;
+        width:150px;
+    }
 }
 @media screen and (max-width:767px){
     color:#ffffff;
@@ -152,6 +179,10 @@ export const AddButton = style.button`
     font-size:16px;
     width:120px;
     height:30px;
+    &:hover{
+        background-color:#9b3de3;
+        width:130px;
+    }
 }
 @media screen and (max-width:375px){
     color:#ffffff;
@@ -167,6 +198,10 @@ export const AddButton = style.button`
     font-size:8px;
     width:80px;
     height:20px;
+    &:hover{
+        background-color:#9b3de3;
+        width:90px;
+    }
 }
 `
 export const Tabs = style.div`
@@ -191,6 +226,12 @@ export const Tab = style.button`
     margin-right:60px;
     font-weight:bold;
     cursor:pointer;
+    transition:1s;
+    &:hover{
+        border-bottom:2px solid #9b3de3;
+        color:#9b3de3;
+        font-size:30px;
+    }
 }
 
 @media screen and (max-width:767px){
@@ -198,13 +239,19 @@ export const Tab = style.button`
     border-right:none;
     border-top:none;
     border-bottom:2px solid ${props=>props.color};
-    font-size:25px;
+    font-size:23px;
     font-family:Roboto;
     background-color:transparent;
     color:${props => props.color};
     margin-right:40px;
     font-weight:bold;
     cursor:pointer;
+    transition:1s;
+    &:hover{
+        border-bottom:2px solid #9b3de3;
+        color:#9b3de3;
+        font-size:27px;
+    }
 }
 @media screen and (max-width:767px){
     border-left:none;
@@ -218,6 +265,12 @@ export const Tab = style.button`
     margin-right:40px;
     font-weight:bold;
     cursor:pointer;
+    transition:1s;
+    &:hover{
+        border-bottom:2px solid #9b3de3;
+        color:#9b3de3;
+        font-size:23px;
+    }
 }
 @media screen and (max-width:375px){
     border-left:none;
@@ -231,6 +284,12 @@ export const Tab = style.button`
     margin-right:40px;
     font-weight:bold;
     cursor:pointer;
+    transition:1s;
+    &:hover{
+        border-bottom:2px solid #9b3de3;
+        color:#9b3de3;
+        font-size:18px;
+    }
 }
 `
 export const Notag = style.p`

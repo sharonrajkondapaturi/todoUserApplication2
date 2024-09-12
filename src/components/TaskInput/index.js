@@ -6,7 +6,7 @@ import {FidgetSpinner} from 'react-loader-spinner'
 import { CiLogout } from "react-icons/ci";
 import { IoAddSharp } from "react-icons/io5";
 import TaskList from "../TaskList"
-import { BackgroundContainer,Heading,TopContainer,TodoInput,AddButton,MainContainer,Tab,Tabs,LoadContainer,FailureImage,Notag} from './styledComponents';
+import { BackgroundContainer,Heading,TopContainer,TodoInput,AddButton,MainContainer,Tab,Tabs,LoadContainer,FailureImage,Notag,TopRow,UserProfile} from './styledComponents';
 
 // apiStatus is for loading,suucessfull page and Failure Page
 
@@ -25,6 +25,7 @@ const TaskInput = () =>{
     const [todo,setTodo] = useState('')
     const [todoList,setTodoList] = useState([])
     const navigate = useNavigate()
+    const username = localStorage.getItem("userTodo")
     
     //fetching the data
     const onRender = async(priority,todo)=>{
@@ -55,7 +56,7 @@ const TaskInput = () =>{
     
     //the loading is displayed until the data has been fetched
     const onRenderLoading = ()=>(
-        <LoadContainer>
+        <LoadContainer style={{minHeight:900}}>
             <FidgetSpinner visible={true} height="80" width="80" ariaLabel="fidget-spinner-loading" wrapperStyle={{}} wrapperClass="fidget-spinner-wrapper"/>
         </LoadContainer>
         
@@ -63,7 +64,7 @@ const TaskInput = () =>{
 
     //the todo objects will be render successfull and todolist will be fetched from the Created Api
     const onRenderSuccess = ()=>(
-        <div>
+        <div style={{minHeight:900,textAlign:'center'}}>
              {todoList.length === 0?<Notag>No Current TodoList Either create or toggle the Priority</Notag>:
             <MainContainer>{todoList.map(eachTodo=>
                 <TaskList key={eachTodo.id} todoList={eachTodo}/>
@@ -113,6 +114,10 @@ const TaskInput = () =>{
         Cookies.remove('jwt_token')
         navigate('/login')
     }
+
+    const onUser = ()=>{
+        navigate('/userTodo')
+    }
     
     //each priority for their own colors
     const onColor = (colors) =>{
@@ -135,7 +140,10 @@ const TaskInput = () =>{
 
     return(
         <BackgroundContainer>
-            <Heading>Todo List</Heading>
+            <TopRow>
+               <Heading>{username} Todo List</Heading>
+               <UserProfile onClick={onUser}>{username[0].toUpperCase()}</UserProfile>
+            </TopRow>
             <TopContainer>
                 <TodoInput placeholder="Enter Todo" onChange={onTodo} value={todo}/>
                 <AddButton onClick={onAddTodo}>

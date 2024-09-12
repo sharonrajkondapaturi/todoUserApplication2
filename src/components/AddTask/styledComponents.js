@@ -6,7 +6,7 @@ export const Background = style.div`
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    background-image:url('https://static.vecteezy.com/system/resources/previews/019/925/850/non_2x/notepad-computer-and-coffee-cup-view-from-above-with-copy-space-free-photo.jpg');
+    background-image:linear-gradient(to left,#faf21b,#ebe896);
     min-height:100vh;
     background-size:cover;
 }
@@ -15,7 +15,7 @@ export const Background = style.div`
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    background-image:url('https://static.vecteezy.com/system/resources/previews/019/925/850/non_2x/notepad-computer-and-coffee-cup-view-from-above-with-copy-space-free-photo.jpg');
+    background-image:linear-gradient(to left,#faf21b,#ebe896);
     min-height:120vh;
     min-width:376px;
     max-width:767px;
@@ -26,7 +26,7 @@ export const Background = style.div`
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    background-image:url('https://static.vecteezy.com/system/resources/previews/019/925/850/non_2x/notepad-computer-and-coffee-cup-view-from-above-with-copy-space-free-photo.jpg');
+    background-image:linear-gradient(to left,#faf21b,#ebe896);
     min-height:150vh;
     max-width:376px;
     min-width:0px
@@ -35,10 +35,24 @@ export const Background = style.div`
 }
 `
 export const Heading = style.h1`
-font-family:cursive;
-font-size:42px;
-color:#000000;
-text-align:center;
+@media screen and (min-width:768px){
+    font-family:cursive;
+    font-size:42px;
+    color:#000000;
+    text-align:center;
+}
+@media screen and (max-width:767px){
+    font-family:cursive;
+    font-size:32px;
+    color:#000000;
+    text-align:center;
+}
+@media screen and (max-width:575px){
+    font-family:cursive;
+    font-size:24px;
+    color:#000000;
+    text-align:center;
+}
 `
 
 export const TodoForm = style.form`
@@ -149,11 +163,16 @@ export const AddTodo = style.button`
     padding:8px;
     border-radius:10px;
     background-color:#6b6dd6;
-    width:420px;
+    width:120px;
     font-weight:Roboto;
     cursor:pointer;
     font-weight:bold;
     margin-top:10px;
+    transition:1s;
+    &:hover{
+        background-color:#9b3de3;
+        width:150px;
+    }
 }
 @media screen and (max-width:767px){    
     border:none;
@@ -163,12 +182,16 @@ export const AddTodo = style.button`
     padding:6px;
     border-radius:8px;
     background-color:#6b6dd6;
-    width:320px;
+    width:100px;
     font-weight:Roboto;
     cursor:pointer;
     font-weight:bold;
     margin-top:8px;
-
+    transition:1s;
+    &:hover{
+        background-color:#9b3de3;
+        width:130px;
+    }
 }
 @media screen and (max-width:375px){
     border:none;
@@ -178,14 +201,21 @@ export const AddTodo = style.button`
     padding:6px;
     border-radius:8px;
     background-color:#6b6dd6;
-    width:220px;
+    width:100px;
     font-weight:Roboto;
     cursor:pointer;
     font-weight:bold;
     margin-top:8px;
+    transition:1s;
+    &:hover{
+        background-color:#9b3de3;
+        width:130px;
+    }
 }
 `
-
+export const Star = style.span`
+color:red;
+`
 export const SelectPriority = style.select`
 @media screen and (min-width:768px){
     width:420px;
@@ -255,4 +285,12 @@ export const TodoText = style.textarea`
     width:200px;
     margin-bottom:10px;  
 }
+`
+
+export const Condit = style.p`
+color:#f5073a;
+font-weight:bold;
+font-family:cursive;
+font-size:16px;
+margin-top:1px;
 `

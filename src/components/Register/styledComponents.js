@@ -15,6 +15,11 @@ margin-bottom:10px;
 display:flex;
 flex-direction:column;
 `
+
+export const Star = style.span`
+color:red;
+`
+
 export const Heading = style.h1`
 @media screen and (min-width:768px){
     font-family:cursive;
@@ -145,4 +150,10 @@ font-family:Roboto;
 font-size:18px;
 margin:6px;
 font-weight:bold;
+`
+export const Condit = style.p`
+color:#f5073a;
+font-weight:bold;
+font-size:16px;
+margin-top:1px;
 `

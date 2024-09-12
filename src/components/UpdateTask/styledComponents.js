@@ -6,7 +6,7 @@ export const Background = style.div`
     flex-direction:column;
     justify-content:center;
     align-items:center;
-   background-image:url('https://wallpapercave.com/wp/wp7881177.jpg');
+    background-image:linear-gradient(to left,#f7a63b,#d1ae80);
     min-height:100vh;
     background-size:cover;
 }
@@ -15,7 +15,7 @@ export const Background = style.div`
     flex-direction:column;
     justify-content:center;
     align-items:center;
-   background-image:url('https://wallpapercave.com/wp/wp7881177.jpg');
+    background-image:linear-gradient(to left,#f7a63b,#d1ae80);
     min-height:120vh;
     min-width:376px;
     max-width:767px;
@@ -26,7 +26,7 @@ export const Background = style.div`
     flex-direction:column;
     justify-content:center;
     align-items:center;
-   background-image:url('https://wallpapercave.com/wp/wp7881177.jpg');
+    background-image:linear-gradient(to left,#f7a63b,#d1ae80);
     min-height:150vh;
     max-width:376px;
     min-width:0px
@@ -40,7 +40,9 @@ font-size:42px;
 color:#000000;
 text-align:center;
 `
-
+export const Star = style.span`
+color:red;
+`
 export const TodoForm = style.form`
 @media screen and (min-width:768px){
     display:flex;
@@ -149,11 +151,16 @@ export const UpdateTodo = style.button`
     padding:8px;
     border-radius:10px;
     background-color:#6b6dd6;
-    width:420px;
+    width:125px;
     font-weight:Roboto;
     cursor:pointer;
     font-weight:bold;
     margin-top:10px;
+    transition:1s;
+    &:hover{
+        background-color:#9b3de3;
+        width:150px;
+    }
 }
 @media screen and (max-width:767px){    
     border:none;
@@ -163,12 +170,16 @@ export const UpdateTodo = style.button`
     padding:6px;
     border-radius:8px;
     background-color:#6b6dd6;
-    width:320px;
+    width:110px;
     font-weight:Roboto;
     cursor:pointer;
     font-weight:bold;
     margin-top:8px;
-
+    transition:1s;
+    &:hover{
+        background-color:#9b3de3;
+        width:130px;
+    }
 }
 @media screen and (max-width:375px){
     border:none;
@@ -178,11 +189,15 @@ export const UpdateTodo = style.button`
     padding:6px;
     border-radius:8px;
     background-color:#6b6dd6;
-    width:220px;
+    width:100px;
     font-weight:Roboto;
     cursor:pointer;
     font-weight:bold;
     margin-top:8px;
+    &:hover{
+        background-color:#9b3de3;
+        width:120px;
+    }
 }
 `
 
@@ -255,4 +270,10 @@ export const TodoText = style.textarea`
     width:200px;
     margin-bottom:10px;  
 }
+`
+export const Condit = style.p`
+color:#f5073a;
+font-weight:bold;
+font-size:16px;
+margin-top:1px;
 `
