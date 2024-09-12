@@ -5,6 +5,7 @@ import { NoContainer,NoImage,Heading,Button } from "./styledComponents"
 const NoPageFound = ()=>{
     const navigate = useNavigate()
 
+    //navigate to Home Page
     const onButton = ()=>{
         navigate('/')
     }

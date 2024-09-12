@@ -8,8 +8,8 @@ import {UserContainer,UserImage,Box,UserCon,UserDescrip,Button} from './styledCo
 const apiStatus = {
     initial:"INITIAL",
     loading:"LOADING",
-    failure:"FAILED"
 }
+//user Details Of a Todo List
 const UserDetails = ()=>{
     const username = localStorage.getItem("userTodo")
     const [userTodo,setUserTodo] = useState(apiStatus.loading)
@@ -23,6 +23,7 @@ const UserDetails = ()=>{
     const config = {
         headers : {Authorization: `Bearer ${jwtToken}` }
     }
+    //render user details
     const onUserRender = async()=>{
         const userDetailsApi = `https://backendtodoblog2-4.onrender.com/todos/userTodos`
         const userCount = await axios.get(userDetailsApi,config)
@@ -34,28 +35,34 @@ const UserDetails = ()=>{
         }
     }
 
+    //use to logout
     const onLogout = ()=>{
         Cookies.remove('jwt_token')
         localStorage.clear()
         navigate('/login')
     }
 
+    //navigate  to home
     const onShowTodo = ()=>{
         navigate("/")
     }
 
+    //for loading
     const onLoading = ()=>(
         <ThreeDots height={20} width={20}/>
     )
 
+    //add todo
     const onAddTodos = ()=>{
         navigate('/addtodos')
     }
 
+    //use to render
     useEffect(()=>{
         onUserRender()
         // eslint-disable-next-line
     },[])
+
 return(
     <UserContainer>
     <Box>

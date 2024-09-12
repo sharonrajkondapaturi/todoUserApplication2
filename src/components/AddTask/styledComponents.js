@@ -6,7 +6,7 @@ export const Background = style.div`
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    background-image:linear-gradient(to left,#faf21b,#ebe896);
+    background-image:linear-gradient(to left,#662D8C,#ED1E79);
     min-height:100vh;
     background-size:cover;
 }
@@ -15,7 +15,7 @@ export const Background = style.div`
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    background-image:linear-gradient(to left,#faf21b,#ebe896);
+    background-image:linear-gradient(to left,#662D8C,#ED1E79);
     min-height:120vh;
     min-width:376px;
     max-width:767px;
@@ -26,7 +26,7 @@ export const Background = style.div`
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    background-image:linear-gradient(to left,#faf21b,#ebe896);
+    background-image:linear-gradient(to left,#662D8C,#ED1E79);
     min-height:150vh;
     max-width:376px;
     min-width:0px
@@ -290,7 +290,6 @@ export const TodoText = style.textarea`
 export const Condit = style.p`
 color:#f5073a;
 font-weight:bold;
-font-family:cursive;
 font-size:16px;
 margin-top:1px;
 `

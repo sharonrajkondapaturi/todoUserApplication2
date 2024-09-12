@@ -6,7 +6,7 @@ export const BackgroundContainer = style.div`
     flex-direction:column;
     justify-content:flex-start;
     align-items:center;
-    background-image:linear-gradient(to top,#d59edb,#f4ebf5);
+    background-image:linear-gradient(to left,#16bffd,#cb3066);
     min-height:100vh;
     width:100%;
     background-size:cover;
@@ -16,7 +16,7 @@ export const BackgroundContainer = style.div`
     flex-direction:column;
     justify-content:flex-start;
     align-items:center;
-    background-image:linear-gradient(to top,#d59edb,#f4ebf5);
+    background-image:linear-gradient(to left,#16bffd,#cb3066);
     min-height:100vh;
     width:767px;
     background-size:cover;
@@ -26,7 +26,7 @@ export const BackgroundContainer = style.div`
     flex-direction:column;
     justify-content:flex-start;
     align-items:center;
-    background-image:linear-gradient(to top,#d59edb,#f4ebf5);
+    background-image:linear-gradient(to left,#16bffd,#cb3066);
     min-height:100vh;
     width:575px;
     background-size:cover;
@@ -36,7 +36,7 @@ export const BackgroundContainer = style.div`
     flex-direction:column;
     justify-content:flex-start;
     align-items:center;
-    background-image:linear-gradient(to top,#d59edb,#f4ebf5);
+    background-image:linear-gradient(to left,#16bffd,#cb3066);
     min-height:100vh;
     min-width:376px;
     max-width:767px;
@@ -57,7 +57,7 @@ export const UserProfile = style.div`
 border-radius:100%;
 width:50px;
 height:50px;
-background-color:#e314c7;
+background-image:linear-gradient(to left,#2c3e50,#fd746c);
 font-weight:bold;
 display:flex;
 flex-direction:column;
@@ -66,8 +66,10 @@ align-items:center;
 font-size:18px;
 margin-left:20px;
 cursor:pointer;
+transition:1s;
 &:hover{
-    background-color:#f29007;
+    color:#fff;
+    background-image:linear-gradient(to left,#e96443,#904e95);
 }
 `
 export const TopContainer = style.div`

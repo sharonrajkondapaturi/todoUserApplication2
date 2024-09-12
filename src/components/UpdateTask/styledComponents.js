@@ -6,7 +6,7 @@ export const Background = style.div`
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    background-image:linear-gradient(to left,#f7a63b,#d1ae80);
+    background-image:linear-gradient(to left,#2E3192,#1BFFFF);
     min-height:100vh;
     background-size:cover;
 }
@@ -15,7 +15,7 @@ export const Background = style.div`
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    background-image:linear-gradient(to left,#f7a63b,#d1ae80);
+    background-image:linear-gradient(to left,#2E3192,#1BFFFF);
     min-height:120vh;
     min-width:376px;
     max-width:767px;
@@ -26,7 +26,7 @@ export const Background = style.div`
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    background-image:linear-gradient(to left,#f7a63b,#d1ae80);
+    background-image:linear-gradient(to left,#2E3192,#1BFFFF);
     min-height:150vh;
     max-width:376px;
     min-width:0px

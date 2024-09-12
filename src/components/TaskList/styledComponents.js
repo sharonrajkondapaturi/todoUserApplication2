@@ -2,7 +2,7 @@ import style,{keyframes} from 'styled-components'
 
 const slideUp = keyframes`
 from{
-    margin-top:-100px;
+    margin-top:-160px;
 }
 to{
     margin-top:0px;
@@ -24,7 +24,7 @@ export const TodoList = style.li`
     border-radius:10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     animation-name:${slideUp};
-    animation-duration:3s;
+    animation-duration:4s;
 }
 @media screen and (max-width:767px){
     display:flex;
@@ -39,7 +39,7 @@ export const TodoList = style.li`
     max-height:550px;
     overflow-y:scroll;
     animation-name:${slideUp};
-    animation-duration:3s;
+    animation-duration:4s;
 }
 @media screen and (max-width:575px){
     display:flex;
@@ -54,7 +54,7 @@ export const TodoList = style.li`
     max-height:500px;
     overflow-y:scroll;
     animation-name:${slideUp};
-    animation-duration:3s;
+    animation-duration:4s;
 }
 @media screen and (max-width:375px){
     display:flex;
@@ -69,7 +69,7 @@ export const TodoList = style.li`
     max-height:400px;
     overflow-y:scroll;
     animation-name:${slideUp};
-    animation-duration:3s;
+    animation-duration:4s;
 }
 `
 export const HeadContainer = style.div`

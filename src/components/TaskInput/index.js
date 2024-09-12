@@ -51,7 +51,7 @@ const TaskInput = () =>{
     
     //search Bar
     const onTodo = event=>{
-        setTodo(event.target.value.toUpperCase())
+        setTodo(event.target.value)
     }
     
     //the loading is displayed until the data has been fetched

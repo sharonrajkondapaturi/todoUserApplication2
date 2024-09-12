@@ -35,6 +35,7 @@ class AddTask extends Component{
         const config = {
             headers : {Authorization: `Bearer ${jwtToken}` }
         }
+        //below code line were based on the condition which the user can meet the credentials of data or not
         if(todo !=='' || description !=='' || todo[0] !== " " || description[0] !== " "){
             if(todo.length >= 5 && description.length >= 20){
                 this.setState({descriptionlength:false,todolength:false})

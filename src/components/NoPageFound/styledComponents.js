@@ -6,11 +6,12 @@ flex-direction:column;
 justify-content:center;
 align-items:center;
 min-height:100vh;
+background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
 `
 export const NoImage = style.img`
 @media screen and (min-width:768px){
-    width:700px;
-    height:650px;
+    width:450px;
+    height:400px;
     margin-bottom:25px;
 }
 @media screen and (max-width:767px){
@@ -65,6 +66,10 @@ export const Button = style.button`
     padding:9px;
     width:150px;
     margin-top:25px;
+    cursor:pointer;
+    &:hover{
+        background-color:#9b3de3;
+    }
 }
 @media screen and (max-width:767px){
     border:none;
@@ -75,6 +80,11 @@ export const Button = style.button`
     padding:7px;
     width:130px;
     margin-top:25px;
+    cursor:pointer;
+    transition:1s;
+    &:hover{
+        background-color:#9b3de3;
+    }
 }
 @media screen and (max-width:575px){
     border:none;
@@ -85,6 +95,11 @@ export const Button = style.button`
     padding:7px;
     width:100px;
     margin-top:25px;
+    cursor:pointer;
+    transition:1s;
+    &:hover{
+        background-color:#9b3de3;
+    }
 }
 @media screen and (max-width:375px){
     border:none;
@@ -95,5 +110,10 @@ export const Button = style.button`
     padding:6px;
     width:90px;
     margin-top:20px;
+    cursor:pointer;
+    transition:1s;
+    &:hover{
+        background-color:#9b3de3;
+    }
 }
 `

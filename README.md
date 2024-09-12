@@ -12,6 +12,7 @@ In this project we are going to see the deployed app of TodoApplication
 
 --->BackendApi
 ### https://backendtodoblog2-4.onrender.com/todos (GET,POST)
+### https://backendtodoblog2-4.onrender.com/todos/userTodos(GET)
 ### https://backendtodoblog2-4.onrender.com/todos/:id (PUT,DELETE)
 ### https://backendtodoblog2-4.onrender.com/login (POST)
 ### https://backendtodoblog2-4.onrender.com/register (POST)
@@ -36,6 +37,7 @@ In this project we are going to see the deployed app of TodoApplication
 ### Register
 ### NoPageFound
 ### ProtectedRoute
+### userDetails
 
 ### hooks state used
 --> useState
@@ -66,11 +68,11 @@ In this project we are going to see the deployed app of TodoApplication
 
 -----> the main primary file is App.js which contains the following components of the location
 
-### Register Component (https://main--nucleartodo.netlify.app/register)
+### Register Component 
 
------> the new user will register the date with the help of the Registercomponent and then it will route back to LoginPage (https://main--nucleartodo.netlify.app/login)
+-----> the new user will register the date with the help of the Registercomponent and then it will route back to LoginPage 
 
-### Login Component (https://main--nucleartodo.netlify.app/login)
+### Login Component
 
 -----> the user is used for logging in with the correct credentials in oerder to route to home Page
 
@@ -78,7 +80,7 @@ In this project we are going to see the deployed app of TodoApplication
 
 ------> it is used to access wheter the user is loged it will be accessing the todo page if not it will redirect to login this can be done using Cookies
 
-### TaskInput Component (https://main--nucleartodo.netlify.app/)
+### TaskInput Component 
 
 -----> it contains todoList of the user's
 -----> it contains AddTodo,EditTodo,DeleteTodo and also we can change the status of the todoData
@@ -94,17 +96,20 @@ In this project we are going to see the deployed app of TodoApplication
 -----> if we click Accomplished the todo text of the todoList will be striken and display as Unaccomplished 
 -----> if we click Unaccomplished the todo text of the todoList will be un-striken and display as Accomplished 
 
-### AddTask Component (https://main--nucleartodo.netlify.app/addTodo)
-
+### AddTask Component 
 ----> AddTask component is used for adding new Todo of the corresponding User
 
-### UpdateTask Component (https://main--nucleartodo.netlify.app/updateTodo)
+### UpdateTask Component
 
 ----> UpdateTask component is used for updating Todo of the corresponding User
 
-### NoPageFound Component (optionalComponent)
+### UserDetail Component
 
-----> it is a optional Component as Netlify will find and give 404 message
+----> UserDetails component is used to display the user todo count ,accomplished and unaccomplished count also contains home,add todo and logout buttons
+
+### NoPageFound Component 
+
+----> If the published link is incorrect Then it will be routed to No Found By clicking Home
 
 
                 ******in order to understand more and clear, check out the following components which is been commented every step****

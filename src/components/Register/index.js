@@ -24,7 +24,7 @@ const Register = ()=>{
 
     }
 
-    //check's the user credentials
+    //check's the user credentials before checking it checks the user credential condition
     const onCredentials = async(event) =>{
         event.preventDefault()
         const userDetails = {

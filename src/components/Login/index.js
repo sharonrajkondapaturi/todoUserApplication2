@@ -28,7 +28,7 @@ const Login = ()=>{
         }
         setError('')
         setloading(prevState => !prevState)
-        //if the credential were right it will go to try state or else catch
+        //if the credential were right it will go to try state or else catch before it checks user and password conditions
         if(username === '' && password === ''){
             setError('')
             setloading(prevState => !prevState)

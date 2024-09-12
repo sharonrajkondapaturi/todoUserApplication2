@@ -15,7 +15,7 @@ export const UserContainer = style.div`
     justify-content:center;
     align-items:center;
     min-height:100vh;
-    background-image:linear-gradient(to top,#d59edb,#f4ebf5);
+    background-image:linear-gradient(to top,#FF512F,#DD2476);
 `
 export const Box = style.div`
 @media screen and (min-width:768px){
@@ -107,6 +107,7 @@ margin-left:10px;
 font-weight:bold;
 cursor:pointer;
 transition:1s;
+font-size:15px;
 &:hover{
     background-color:#9b3de3;
     transform:translateY(10px)

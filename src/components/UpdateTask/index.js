@@ -31,6 +31,7 @@ const UpdateTask = ()=>{
         const config = {
             headers : {Authorization: `Bearer ${jwtToken}` }
         }
+        //check whether the details were not empty and if not it will be fetched
         if(todo !=='' || description !=='' || todo[0] !== " " || description[0] !== " "){
             if(todo.length >= 5 && description.length >= 20){
                 updateTodoLength(false)
