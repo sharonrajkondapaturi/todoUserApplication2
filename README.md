@@ -46,7 +46,7 @@ In this project we are going to see the deployed app of TodoApplication
 
 ### libraries used
 ---> react-icons
----> react-loader-spinner (FidgetSpinner)
+---> react-loader-spinner (FidgetSpinner,ThreeDots)
 ---> react (useState,useEffect)
 ---> react-router-dom (useNavigate,Link,Routes,Route,BrowserSwitch)
 ---> axios
