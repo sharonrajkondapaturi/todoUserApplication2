@@ -30,17 +30,16 @@ const Login = ()=>{
         setloading(prevState => !prevState)
         //if the credential were right it will go to try state or else catch before it checks user and password conditions
         if(username === '' && password === ''){
-            setError('')
+            setError('* Credentials were missing')
             setloading(prevState => !prevState)
-            alert("Credentials were missing")
         }
         else if(username === ''){
             setloading(prevState => !prevState)
-            setError('username is missing')
+            setError('* username is missing')
         }
         else if(password === ''){
             setloading(prevState => !prevState)
-            setError('password is missing')
+            setError('* password is missing')
         }
         else{
             try{
@@ -51,7 +50,7 @@ const Login = ()=>{
             }
             catch{
                 setloading(prevState => !prevState)
-                setError("Invalid username or password")
+                setError("* Invalid username or password")
             }
         }  
     }
@@ -87,7 +86,7 @@ return(
                 Login
             </LoginButton>
             <Link to="/register" color="#ffffff">
-            <Linkto>are you a new user?</Linkto>
+            <Linkto>Are you a new user?</Linkto>
             </Link>
         </Form>
     </Container>

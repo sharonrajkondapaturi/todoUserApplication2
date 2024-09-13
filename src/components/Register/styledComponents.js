@@ -22,15 +22,21 @@ color:red;
 
 export const Heading = style.h1`
 @media screen and (min-width:768px){
-    font-family:cursive;
+    font-family:Roboto;
     color:#000000;
     text-align:center;
 }
 @media screen and (max-width:767px){
-    font-family:cursive;
+    font-family:Roboto;
     color:#000000;
     text-align:center;
     font-size:30px;
+}
+@media screen and (max-width:575px){
+    font-family:Roboto;
+    color:#000000;
+    text-align:center;
+    font-size:24px;
 }
 `
 export const Form = style.form`
@@ -138,22 +144,23 @@ export const LoginButton = style.button`
 }
 `
 export const Error = style.p`
-color:#fc030b;
-font-family:Roboto;
-font-size:18px;
+color:#f5073a;
+font-size:13px;
 margin:6px;
 font-weight:bold;
 `
 export const Linkto = style.p`
 color:#ffffff;
-font-family:Roboto;
 font-size:18px;
-margin:6px;
+margin:10px;
 font-weight:bold;
+&:hover{
+    color:#000;
+}
 `
 export const Condit = style.p`
 color:#f5073a;
+font-size:13px;
 font-weight:bold;
-font-size:16px;
 margin-top:1px;
 `

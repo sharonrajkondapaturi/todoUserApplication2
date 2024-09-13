@@ -142,7 +142,7 @@ const Register = ()=>{
 return(
     <Container>
         <Form onSubmit={onCredentials}>
-            <Heading>Register</Heading>
+            <Heading>Sign up</Heading>
             <MiniContainer>
             <Label htmlFor="user">Username <Star>*</Star></Label>
             <Input id="user" value={username} onChange={onUser} placeholder='Username'/>
@@ -166,7 +166,7 @@ return(
                 Register
             </LoginButton>
             <Link to="/login" color="#ffffff">
-            <Linkto>already a user?</Linkto>
+            <Linkto>Already a user?</Linkto>
             </Link>
         </Form>
     </Container>
