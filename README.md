@@ -3,7 +3,7 @@
 ### DeployedApp (Frontentend)
 In this project we are going to see the deployed app of TodoApplication 
 
-[### https://main--nucleartodo.netlify.app](https://main--personstodo.netlify.app/)
+### https://main--personstodo.netlify.app/
 
 ----> the following components which are used
 
